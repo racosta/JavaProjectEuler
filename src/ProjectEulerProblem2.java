@@ -1,5 +1,7 @@
 /**
- * Created by SG0210832 on 4/14/2016.
+ * Java solution for Project Euler problem 2
+ * @author Ryan Acosta
+ * @version 4/14/2016.
  */
 class ProjectEulerProblem2 {
     ProjectEulerProblem2(int N) {

@@ -11,6 +11,9 @@ public class Main {
                     case 2:
                         new ProjectEulerProblem2(Integer.parseInt(args[1]));
                         break;
+                    case 3:
+                        new ProjectEulerProblem3(Long.parseLong(args[1]));
+                        break;
                     default:
                         System.err.println("Project Euler problem # " + args[0] + "is not supported");
                 }
