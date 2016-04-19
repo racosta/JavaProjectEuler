@@ -26,6 +26,9 @@ public class Main {
                     case 7:
                         new ProjectEulerProblem7(Integer.parseInt(args[1]));
                         break;
+                    case 8:
+                        new ProjectEulerProblem8();
+                        break;
                     default:
                         System.err.println("Project Euler problem # " + args[0] + "is not supported");
                 }
