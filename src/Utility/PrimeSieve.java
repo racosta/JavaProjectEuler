@@ -16,13 +16,13 @@ public class PrimeSieve {
         if (N < 2) {
             return primes;
         }
-        primes.add(Long.valueOf(2));
+        primes.add((long) 2);
         long max_ndx = (N-1)/2;
         for (long ndx = 0; 2 * ndx * ndx < N; ++ndx) {
             if (!sieve.containsKey(ndx)) {
                 num = 2*ndx + 3;
                 start_ndx = ndx;
-                primes.add(Long.valueOf(num));
+                primes.add(num);
                 for (Long s: sieve.keySet()) {
                     if (s <= start_ndx) {
                         sieve.remove(s);
@@ -36,7 +36,7 @@ public class PrimeSieve {
         }
         for (long ndx = start_ndx + 1; ndx < max_ndx; ndx++) {
             if (!sieve.containsKey(ndx)) {
-                primes.add(Long.valueOf(2*ndx + 3));
+                primes.add(2*ndx + 3);
             }
         }
         return primes;
