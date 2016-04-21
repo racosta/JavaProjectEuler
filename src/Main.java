@@ -29,6 +29,9 @@ public class Main {
                     case 8:
                         new ProjectEulerProblem8();
                         break;
+                    case 9:
+                        new ProjectEulerProblem9();
+                        break;
                     default:
                         System.err.println("Project Euler problem # " + args[0] + "is not supported");
                 }
