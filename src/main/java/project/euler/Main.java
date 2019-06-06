@@ -32,25 +32,28 @@ public class Main {
                   p = new Problem007(Integer.parseInt(args[1]));
                   break;
                case 8:
-                  new ProjectEulerProblem8();
+                  p = new Problem008();
                   break;
                case 9:
-                  new ProjectEulerProblem9();
+                  p = new Problem009();
                   break;
                case 10:
-                  new ProjectEulerProblem10(Long.parseLong(args[1]));
+                  p = new Problem010(Long.parseLong(args[1]));
                   break;
                case 11:
-                  new ProjectEulerProblem11();
+                  p = new Problem011();
                   break;
                case 12:
-                  new ProjectEulerProblem12(Long.parseLong(args[1]));
+                  p = new Problem012(Long.parseLong(args[1]));
                   break;
                case 13:
-                  new ProjectEulerProblem13();
+                  p = new Problem013();
                   break;
                case 14:
-                  new ProjectEulerProblem14(Integer.parseInt(args[1]));
+                  p = new Problem014(Integer.parseInt(args[1]));
+                  break;
+               case 15:
+                  p = new Problem015(Integer.parseInt(args[1]));
                   break;
                default:
                   log.error(String.format("Project Euler problem # %s is not supported", args[0]));

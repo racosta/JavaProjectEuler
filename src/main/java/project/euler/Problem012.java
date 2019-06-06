@@ -1,25 +1,37 @@
 package project.euler;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * Java solution for Project Euler problem 12
+ *
  * @author Ryan Acosta
  * @version 3/10/2017.
  */
-class ProjectEulerProblem12 {
-   ProjectEulerProblem12(long N) {
+@Slf4j
+class Problem012 implements ProjectEulerProblem {
+   private long n;
+
+   public Problem012(long n) {
+      this.n = n;
+   }
+
+   public Object execute() {
       long t1 = System.nanoTime();
 
       // Find first triangle number with more than N divisors
 
       long triangleNumber = 28;
       long nthNumber = 7;
-      while (numFactors(triangleNumber) <= N) {
+      while (numFactors(triangleNumber) <= n) {
          ++nthNumber;
          triangleNumber += nthNumber;
       }
 
-      System.out.println("Problem 12: " + triangleNumber + " the " + nthNumber + "th triangle number");
-      System.out.format("Elapsed time: %f seconds.%n", (double) (System.nanoTime() - t1) / 1000000000.0);
+      log.info(String.format("Problem 12: %d the %dth triangle number", triangleNumber, nthNumber));
+      log.info(String.format("Elapsed time: %f seconds.%n", (double) (System.nanoTime() - t1) / 1000000000.0));
+
+      return triangleNumber;
    }
 
    /**
