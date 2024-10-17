@@ -14,7 +14,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         
         <slf4j.version>1.7.25</slf4j.version>
-        <groovy.version>2.4.12</groovy.version>
+        <groovy.version>2.4.21</groovy.version>
         <spock.version>1.2-groovy-2.4</spock.version>
 
         <skip.integration.tests>true</skip.integration.tests>
